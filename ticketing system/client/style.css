@@ -1,0 +1,245 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* this code worksd for the sign up page */
+.form-container{
+    display: flex;
+    background: rgb(56, 57, 59);
+    height: auto;
+}
+.form-inner{
+    max-width: 700px;
+    height: 590px;
+    margin: 200px auto;
+    background: rgba(0, 0, 255, 0.748);
+    border-radius: 15px;
+}
+.header{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin: 15px 250px;
+}
+.head{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin: 15px 50px;
+}
+.input-container label{
+    color: white;
+    margin: 5px;
+}
+.input-container input{
+    border: 1px;
+    padding: 8px;
+    margin: 5px;
+    width: 95%;
+    outline: none;
+    border-radius: 5px;
+}
+.input-container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.password-btn{
+    cursor: pointer;
+    margin: -16px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.password{
+    cursor: pointer;
+    border: 1px;
+    background: rgba(111, 175, 0, 0.995);
+    padding: 5px;
+    border-radius: 5px;
+}
+.password-validation{
+    color: red;
+}
+.loginpassword{
+    margin: 15px 0;
+}
+.signupbtn{
+    cursor: pointer;
+    padding: 8px;
+    border: 1px;
+    outline: none;
+    border-radius: 6px;
+    color: white;
+    background: rgb(111, 175, 0);
+    width: 20%;
+    font-weight: 600;
+    margin: 5px;
+}
+.btn-container{
+    margin: 0 20px;
+    display: flex;
+}
+.loginbtn{
+    cursor: pointer;
+    padding: 8px;
+    border: 1px;
+    outline: none;
+    border-radius: 6px;
+    color: white;
+    background: rgb(111, 175, 0);
+    width: 20%;
+    font-weight: 600;
+    margin: 7px;
+}
+
+/* this code is for the login page */
+.blur-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 57, 59, 0.568);
+    backdrop-filter: blur(4px); /* Adding blur effect to the background */
+    z-index: 999; /* Ensure the blurred background appears behind the popup */
+    transition: .5s;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    background-color: rgba(0, 0, 255, 0.896);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the popup appears on top of the blurred background */
+    transition: .5s;
+    color: whitesmoke;
+  }
+  
+  .notification p {
+    margin: 0;
+  }
+  
+  .notification .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .close{
+    font-size: 25px;
+  }
+ 
+/* this  is the loader */
+.spinner {
+   width: 14px;
+   height: 14px;
+   border: 4.8px #ffffff double;
+   border-left-style: solid;
+   border-radius: 50%;
+   animation: spinner-aib1d7 0.75s infinite linear;
+}
+
+@keyframes spinner-aib1d7 {
+   to {
+      transform: rotate(360deg);
+   }
+}
+  
+
+/*this code display autotyping format */
+  .autotyping-container {
+    width: 50%;
+    text-align: center;
+    padding: 400px 0;
+    color: rgb(205, 221, 255);
+    background-color: black;
+  }
+  
+  .typing-text {
+    display: inline-block;
+    border-right: 2px solid #333;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 8s steps(40, end) infinite, blink-caret 0.5s step-end infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+  
+
+  /* this  codes work for the homepage  */
+.typing-container{
+  text-align: center;
+  color: whitesmoke;
+}
+.ticket-container{
+ margin: 20px;
+}
+.ticket-container-inner{
+  max-width: 900px;
+  margin: 70px auto;
+  height: auto;
+  background-color: #2f55ff;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+}
+.ticket-container label{
+  color: white;
+}
+.ticket-container h2{
+  color: whitesmoke;
+  text-align: center;
+}
+.ticket-container select{
+  width: 20%;
+  height: 30px;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.ticket-container textarea{
+  width: 98%;
+  outline: none;
+  border: 1px;
+  border-radius: 10px;
+  resize: none;
+  scrollbar-width: none;
+}
+.ticketBtn{
+  cursor: pointer;
+  margin: 25px;
+  padding: 8px;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  background-color: #2f55ff;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 600;
+}
